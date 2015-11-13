@@ -1,5 +1,5 @@
 // var Riot = require('./index.js')
-// var r = Riot('7373751d-df26-46a0-90ae-82037012187a')
+// var r = Riot($APIKEY)
 // r.q('k','http://google.com', function(err, response, body) {
 //   console.log(body)
 // })
@@ -8,10 +8,10 @@
 // })
 
 // var Riot = require('./index.js')
-// var app = Riot.init('7373751d-df26-46a0-90ae-82037012187a')
+// var app = Riot.init($APIKEY)
 
 var Riot = require('./index.js')
-var app = new Riot('7373751d-df26-46a0-90ae-82037012187a')
+var app = new Riot($APIKEY)
 app.query('http://google.com', function(err, response, body) {
   console.log(err, response, body)
 })
